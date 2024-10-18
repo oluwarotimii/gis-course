@@ -1,0 +1,6 @@
+Flask
+Flask-WTF
+WTForms
+Flask-Login
+requests  # For interacting with the JupyterHub API
+bcrypt    # For password hashing

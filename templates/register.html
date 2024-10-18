@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEodev - Register</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Register for Geodev GIS Course</h1>
+            {% if message %}
+                <div class="alert">{{ message }}</div>
+            {% endif %}
+            <form method="POST" action="{{ url_for('register') }}">
+                <div class="form-group">
+                    <input type="text" name="username" placeholder="Enter Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Enter Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="Enter Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <a href="{{ url_for('login') }}">Already have an account? Login here</a>
+        </div>
+    </div>
+    <footer>&copy; 2024 GEodev | Powered by JupyterHub</footer>
+    <script src="../static/scripts.js"></script>
+</body>
+</html>
