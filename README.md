@@ -2,7 +2,7 @@ Here’s a README file for your Flask application, explaining how to set it up, 
 
 ---
 
-# **GEodev JupyterHub Portal**
+# **Geodev JupyterHub Portal**
 
 This project is a web application built using Flask that allows users to **register**, **log in**, and access **JupyterHub** for a **GIS course** provided by **GEodev**. The application connects with JupyterHub, handling user registration and authentication, and redirects users to their JupyterHub notebooks after login.
 
